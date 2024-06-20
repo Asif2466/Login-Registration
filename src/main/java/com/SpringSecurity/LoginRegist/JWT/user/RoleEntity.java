@@ -1,4 +1,4 @@
-package com.SpringSecurity.LoginRegist.JWT.entity;
+package com.SpringSecurity.LoginRegist.JWT.user;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

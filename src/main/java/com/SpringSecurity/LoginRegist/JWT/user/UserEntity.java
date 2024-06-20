@@ -1,4 +1,4 @@
-package com.SpringSecurity.LoginRegist.JWT.entity;
+package com.SpringSecurity.LoginRegist.JWT.user;
 
 
 import com.SpringSecurity.LoginRegist.JWT.token.Token;
@@ -7,7 +7,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.aspectj.weaver.patterns.IToken;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

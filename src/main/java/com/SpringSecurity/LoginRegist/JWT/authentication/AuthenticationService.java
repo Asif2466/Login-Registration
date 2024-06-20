@@ -2,8 +2,8 @@ package com.SpringSecurity.LoginRegist.JWT.authentication;
 
 import com.SpringSecurity.LoginRegist.JWT.dto.LoginDTO;
 import com.SpringSecurity.LoginRegist.JWT.dto.RegisterDTO;
-import com.SpringSecurity.LoginRegist.JWT.entity.RoleEntity;
-import com.SpringSecurity.LoginRegist.JWT.entity.UserEntity;
+import com.SpringSecurity.LoginRegist.JWT.user.RoleEntity;
+import com.SpringSecurity.LoginRegist.JWT.user.UserEntity;
 import com.SpringSecurity.LoginRegist.JWT.repository.RoleRepository;
 import com.SpringSecurity.LoginRegist.JWT.repository.UserRepository;
 import com.SpringSecurity.LoginRegist.JWT.security.JWTService;
@@ -16,12 +16,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Service;
 
 import org.springframework.http.HttpHeaders;

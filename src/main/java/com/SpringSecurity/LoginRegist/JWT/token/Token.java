@@ -1,7 +1,7 @@
 package com.SpringSecurity.LoginRegist.JWT.token;
 
 
-import com.SpringSecurity.LoginRegist.JWT.entity.UserEntity;
+import com.SpringSecurity.LoginRegist.JWT.user.UserEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
