@@ -118,6 +118,7 @@ public class AuthenticationService {
                     orElseThrow();
             if(jwtService.validateToken(refreshToken, userEntity)){
                 var accessToken = jwtService.generateToken(userEntity);
+                revokeAllUserTokens(userEntity);
                 var token = Token.builder()
                         .userEntity(userEntity)
                         .token(accessToken)
@@ -126,7 +127,6 @@ public class AuthenticationService {
                         .revoked(false)
                         .build();
                 tokenRepository.save(token);
-                revokeAllUserTokens(userEntity);
                 var authResponse = AuthenticationResponse.builder()
                         .accessToken(accessToken)
                         .refreshToken(refreshToken)
